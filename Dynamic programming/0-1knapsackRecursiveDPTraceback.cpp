@@ -37,8 +37,6 @@ int knapsack(int weight[], int val[] , int cap, int n)
             trac[n][cap] = 0 ;
             return dp[n][cap] = l2 ;
         }
-
-        //return dp[n][cap] = max(val[n]+knapsack(weight, val, cap-weight[n], n-1) , knapsack(weight, val, cap, n-1)) ;
     }
     else if(weight[n] > cap){
         trac[n][cap] = 0 ;
