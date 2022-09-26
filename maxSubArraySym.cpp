@@ -42,5 +42,18 @@ int main(int argc, char const *argv[])
     }
 
     cout<<maxSubArrSum;
+    cout<<endl;
+
+    maxSubArrSum = 0; 
+    int sum = 0;
+
+    //complixity O(n) 
+    // best one yet
+    for(int i=0 ; i< 8 ; i++){
+        sum = max(arr[i], sum + arr[i]);
+        maxSubArrSum = max(sum, maxSubArrSum);
+    }
+
+    cout<<maxSubArrSum;
     return 0;
 }
